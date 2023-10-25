@@ -1,3 +1,11 @@
 <h1>Este es nuestro equipo</h1>
 
 <p>Nuestro equipo es el mejor</p>
+
+{{#each teamMembers}}
+  <div>
+    <a href="/team/{{this.name}}">
+      {{this.name}}
+    </a>
+  </div>
+{{/each}}
